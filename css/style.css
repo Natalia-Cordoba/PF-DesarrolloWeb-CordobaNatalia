@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* estilo del header */
+header {
+    background-color: rgb(48, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+/* logo */
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: salmon;
+}
+
+.elemento {
+    display: inline-flex;
+    margin: 10px;
+}
+
+/* barra de navegación */
+.menu {
+    list-style-type: none;
+    font-family: "aboreto";
+    font-size: small;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgb(48, 46, 46);
+} 
+
+/* sección de bienvenida */
+#bienvenida {
+    background-color: salmon;
+    margin: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+}
+
+/* título home */
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: "aboreto";
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* frase home */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frase {
+    color:rgb(48, 46, 46);
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    padding-top: 5px;
+}
+
+/* imagen chica leyendo home */
+#chicaLeyendo {
+    height: 180px;
+    width: 150px;
+}
+
+/* títulos secciones */
+h2 {
+    font-family: "aboreto";
+    font-weight: bold;
+    font-size: large;
+    color: salmon;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tutorial uso servicio */
+#tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* pasos tutorial */
+.pasos li {
+    font-family: "roboto";
+    font-size: small;
+    text-align:center;
+    color: white;
+    width: 280px;
+    background-color: rgb(48, 46, 46);
+    border-radius: 6px;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* unboxing caja literaria ejemplo */
+.unboxing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* video de caja literaria */
+.video {
+    width: 250px;
+}
+
+/* subtítulos */
+h3 {
+    font-family: "roboto";
+    font-size: large;
+    color: salmon;
+    padding: 5px;
+}
+
+/* sección cajas */
+#descripcionCajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* contenedores cajas */
+.cajas {
+    border-radius: 20px;
+    background-color: rgb(48, 46, 46);
+    width: 85vw;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* imagenes cajas */
+.imagenCajas {
+    border: 3px salmon solid;
+    height: 150px;
+    width: 200px;
+}
+
+/* nombres cajas */
+.tituloCaja {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+/* descripciones cajas */
+.textoCajas {
+    color: white;
+    font-family: "roboto";
+    font-size: medium;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+/* footer */
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(94, 94, 94);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+   text-decoration: none;
+   color: white;
+}
+
+.copy {
+    color: white
+}
+
+/* sección de contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* sección formulario */
+#formulario {
+    font-family: "roboto";
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+#nombre {
+    height: 35px;
+    width: 70vw;
+}
+
+#correo {
+    height: 35px;
+    width: 70vw;
+}
+
+#comentario {
+    height: 300px;
+    width: 70vw;
+}
+
+.newsletter {
+    color:rgb(48, 46, 46);
+    width: 70vw;
+}
+
+#enviar {
+    font-size: medium;
+    color:rgb(48, 46, 46);
+    border: 0.1 rgb(48, 46, 46) solid;
+    border-radius: 10px;
+    background-color: salmon;
+    height: 40px;
+    width: 80px;
+}
+
+.elementoForm {
+    margin: 10px;
+}
+
+/* links a redes */
+.redes {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 15px;
+}
+
+#metodosContacto {
+    margin-top: 25px;
+}
+
+
+/* implementación de grid en página de inicio */
+.inicio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55px 335px 260px 300px 70px;
+    grid-template-areas:
+        "header"
+        "bienvenida"
+        "tutorial"
+        "aside"
+        "footer";
+    row-gap: 5px;
+}
+/* asigno las areas */
+header {
+    grid-area: header;
+}
+
+#bienvenida {
+    grid-area: bienvenida;
+}
+
+#tutorial {
+    grid-area: tutorial;
+}
+
+.unboxing {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* implementación de grid en página de cajas */
+.nuestrasCajas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1700px 70px;
+    row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "cajas"
+        "footer";
+}
+
+/* asigno las areas */
+header {
+    grid-area: header;
+}
+
+section #descripciónCajas {
+    grid-area: cajas;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* implementación de grid en página de contacto */
+.paginaContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 650px 163px 70px;
+    grid-template-areas:
+        "header"
+        "formulario"
+        "metodosContacto"
+        "footer";
+    row-gap: 10px;
+}
+
+/* asigno las areas */
+header {
+    grid-area: header;
+}
+
+#formulario {
+    grid-area: formulario;
+}
+
+#metodosContacto {
+    grid-area: metodosContacto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* vista tablet pagina de inicio */
+@media (min-width: 600px){
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px auto auto 70px;
+        grid-template-areas:
+            "header header"
+            "bienvenida bienvenida"
+            "tutorial aside"
+            "footer footer";
+        gap: 10px;
+    }
+
+    /* sección header */
+    #logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .menu {
+        font-size: medium;
+        text-align: left;
+    } 
+
+    .elemento {
+        font-size: large;
+        margin: 10px 30px;
+    }
+
+    /* sección bienvenida */
+    #bienvenida {
+        height: 400px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: x-large;
+        text-align: justify;
+        margin-top: 15px;
+    }
+    .imgFrase {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #chicaLeyendo {
+        height: 300px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .frase {
+        font-size: x-large;
+        margin-left: 15px;
+    }
+
+    /* sección tutorial */
+    h2 {
+        font-size: x-large;
+        padding: 10px;
+    }
+
+    .pasos li {
+        font-size: large;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+
+    /* sección unboxing */
+    h3 {
+        font-size: x-large;
+    }
+
+    .video {
+        width: 280px;
+    }
+
+    #tutorial, .unboxing {
+     margin: 0px 20px;
+    }
+}
+
+
+/* vista desktop pagina de incio*/
+@media (min-width: 1024px){
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 45% 38% 7%;
+    }
+
+    /* sección header */
+    .elemento {
+        font-size: xx-large;
+        margin: 30px 70px;
+    }
+
+    #logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* sección bienvenida */
+    #bienvenida {
+        height: 500px;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    #chicaLeyendo {
+        height: 350px;
+        width: 280px;
+        padding-bottom: 10px;
+    }
+
+    .frase {
+        font-size: xx-large;
+        padding-left: 30px;
+    }
+
+    /* sección tutorial */
+    h2 {
+        font-size: xx-large;
+    }
+
+    .pasos li {
+        font-size: x-large;
+        width: 40vw;
+        margin-left: 30px;
+    }
+
+    /* sección unboxing */
+    h3 {
+        font-size: xx-large;
+    }
+
+    .video {
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    #tutorial, .unboxing {
+        margin-top: 20px;
+    }
+}
+
+/* vista tablet página de cajas */
+@media (min-width: 600px) {
+    .nuestrasCajas {
+        grid-template-rows: 70px auto 70px;
+    }
+
+    .cajas{
+        padding: 10px;
+    }
+    
+    .imagenTexto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagenCajas {
+        height: 180px;
+        width: 220px;
+        margin: 15px;
+    }
+
+    .tituloCaja {
+        font-size: x-large;
+    }
+
+    .textoCajas {
+        font-size: large;
+    }
+}
+
+/* vista desktop página de cajas */
+@media (min-width: 1024px) {
+    .nuestrasCajas {
+        grid-template-rows: 110px auto 70px;
+    }
+    
+    .imagenTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        
+    .tituloCaja {
+        font-size: xx-large;
+    }
+
+    .imagenCajas {
+        height: 300px;
+        width: 500px;
+        margin: 10px;
+    }
+
+    .textoCajas {
+        font-size: x-large;
+    }
+}
+
+/* vista tablet página de contacto */
+@media (min-width: 600px) {
+    .paginaContacto {
+        grid-template-rows: 70px auto auto 70px;
+    }
+
+    #formulario {
+        width: 70vw;
+    }
+}
+
+/* vista desktop página de contacto */
+@media (min-width: 1024px) {
+    .paginaContacto {
+        grid-template-rows: 110px auto 70px;
+    }
+}
+
+
