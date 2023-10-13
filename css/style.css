@@ -8,10 +8,14 @@
 header {
     background-color: rgb(48, 46, 46);
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    padding: 10px;
 }
+
+.navbar {
+    font-family: "aboreto";
+    font-weight: bold;
+}
+
 
 /* logo */
 #logo {
@@ -19,25 +23,26 @@ header {
     height: 40px;
 }
 
-nav a {
-    text-decoration: none;
-    color: salmon;
-}
-
-.elemento {
+/* .elemento {
     display: inline-flex;
     margin: 10px;
-}
+} */
 
 /* barra de navegación */
-.menu {
+/* .navlink {
     list-style-type: none;
     font-family: "aboreto";
     font-size: small;
     font-weight: bold;
     text-align: right;
-    background-color: rgb(48, 46, 46);
 } 
+
+.navbar {
+    background-color: rgb(48, 46, 46);
+    text-decoration: none;
+    color: salmon;
+} */
+
 
 /* sección de bienvenida */
 #bienvenida {
@@ -60,7 +65,7 @@ h1 {
 }
 
 /* frase home */
-div {
+div .imgFrase {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,6 +143,11 @@ h3 {
     align-items: center;
 }
 
+div .imagenCajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* contenedores cajas */
 .cajas {
@@ -193,6 +203,7 @@ footer {
 .copy {
     color: white
 }
+
 
 /* sección de contacto */
 .contacto {
@@ -366,7 +377,7 @@ footer {
     }
 
     /* sección header */
-    #logo {
+    /* #logo {
         width: 55px;
         height: 55px;
     }
@@ -379,7 +390,7 @@ footer {
     .elemento {
         font-size: large;
         margin: 10px 30px;
-    }
+    } */
 
     /* sección bienvenida */
     #bienvenida {
@@ -444,7 +455,7 @@ footer {
     }
 
     /* sección header */
-    .elemento {
+    /* .elemento {
         font-size: xx-large;
         margin: 30px 70px;
     }
@@ -452,7 +463,7 @@ footer {
     #logo {
         width: 90px;
         height: 90px;
-    }
+    } */
 
     /* sección bienvenida */
     #bienvenida {
