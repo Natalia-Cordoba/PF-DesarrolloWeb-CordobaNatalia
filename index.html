@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./pages/cajas.html">CAJAS</a>
@@ -35,16 +35,11 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./pages/suscripciones.html">SUSCRIPCIONES</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SOBRE NOSOTROS</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="./pages/quienesSomos.html">¿QUIÉNES SOMOS?</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="dropdown-item" href="./pages/contacto.html">CONTACTO</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>    
@@ -55,21 +50,23 @@
     <!-- sección de bienvenida al sitio con imagen y frase -->
     <section id="bienvenida">
         <h1>¡TE DAMOS LA BIENVENIDA A ENTRE PÁGINAS!</h1>
-        <div class="imgFrase">
-            <img id="chicaLeyendo" src="./assets/images/chicaLeyendo.jpg" alt="imagen de una chica sentada en un sillón leyendo un libro">
-            <p class="frase">"Un lector vive mil vidas antes de morir.<br> El que nunca lee solo vive una"<br> George R. R. Martin</p>
-        </div>
+            <article class="imagenTexto">
+                <img id="chicaLeyendo" src="./assets/images/chicaLeyendo.jpg" alt="imagen de una chica sentada en un sillón leyendo un libro">
+                <p class="frase">"Un lector vive mil vidas antes de morir.<br> El que nunca lee solo vive una"<br> George R. R. Martin</p>
+            </article>
     </section>
 
     <!-- tutorial para comprar servicio -->
     <article id="tutorial">
         <h2>¿Cómo funciona nuestro servicio?</h2>
-            <ol class="pasos">
+        <div class="pasos">
+            <ul class="pasos">
                 <li>1. Encuentra tu caja ideal</li>
                 <li>2. Pide tu caja por compra única o por suscripción</li>
                 <li>3. Recibe el paquete en tu domicilio</li>
                 <li>4. Abre tu caja... y ¡disfruta!</li>
-            </ol>
+            </ul>
+        </div>
     </article>
   
     <!-- video de ejemplo de caja literaria -->

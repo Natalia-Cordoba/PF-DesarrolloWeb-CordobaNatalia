@@ -30,21 +30,16 @@
                             <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/cajas.html">CAJAS</a>
+                            <a class="nav-link" aria-current="page" href="../pages/cajas.html">CAJAS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../pages/suscripciones.html">SUSCRIPCIONES</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SOBRE NOSOTROS</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="../pages/quienesSomos.html">¿QUIÉNES SOMOS?</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="../pages/contacto.html">CONTACTO</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>    
@@ -55,35 +50,36 @@
     <!-- sección de descripción de los productos con su respectiva imagen -->
     <section id="descripcionCajas">
         <h2>¿Sabés cuál es tu caja ideal?</h2>
-        <article id="romance" class="cajas">
-            <h3 class="tituloCaja">Caja Romance</h3>
-            <div class="imagenTexto">
-                <img src="../assets/images/romance.jpg" alt="imagen de una caja literaria abierta con libro de romance y regalos varios" class="imagenCajas">
-                <p class="textoCajas">¿Te encantan las historias de amor? Si te conmueves hasta las lágrimas con autoras como Jane Austen, o te enloquecen las comedias románticas de autoras como Ali Hazelwood. La caja romance es para ti. </p>
-            </div>
-        </article>    
-
-        <article id="misterio" class="cajas">
-            <h3 class="tituloCaja">Caja Misterio</h3>
-            <div class="imagenTexto">
-                <img src="../assets/images/misterio.jpg" alt="imagen de una caja literaria abierta con libro de misterio y regalos varios" class="imagenCajas">
-                <p class="textoCajas">¿Te atraen las historias de intriga, suspenso o incluso terror? ¿Disfrutas las historias de Stephen King o Agatha Christie? Entonces la caja misterio es perfecta para ti. Está pensada para amantes del terror, de la novela negra y/o de las típicas historias de detectives.</p>
-            </div>
-        </article>
-
-        <article id="fantasía" class="cajas">
-            <h3 class="tituloCaja">Caja Fantasía</h3>
-            <div class="imagenTexto">
-                <img src="../assets/images/fantasía.jpg" alt="imagen de una caja literaria abierta con libro de fantasía y regalos varios" class="imagenCajas">
-                <p class="textoCajas">La caja fantasía es ideal para aquellos lectores que disfrutan conocer nuevos mundos, así como sumergirse en historias rodeadas de magia y de grandes aventuras. Aquí podrás encontrarte autores como Brandon Sanderson y Leigh Bardugo.</p>
-            </div>
-        </article>
-
-        <article id="sorpresa" class="cajas">
-            <h3 class="tituloCaja">Caja sorpresa</h3>
-            <div class="imagenTexto">
-                <img src="../assets/images/sorpresa.jpg" alt="imagen de una caja literaria cerrada" class="imagenCajas">
-                <p class="textoCajas">Si todas nuestras cajas te gustan y no logras decidirte, ¡no te preocuoes!. Nosotros lo hacemos por ti. Nos tomamos el atrevimiento (con tu permiso, claro) de elegir una de las tres novedades del mes y te la enviamos sin decirte cuál seleccionamos. Esta opción es solo para valientes.</p>
+        <article class="container-fluid">
+            <div class="row">
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <img src="../assets/images/romance.jpg" class="card-img-top" alt="imagen de una caja literaria abierta con libro de romance y regalos varios">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja Romance</h5>
+                        <p class="card-text">¿Te encantan las historias de amor? Si te conmueves hasta las lágrimas con autoras como Jane Austen, o te enloquecen las comedias románticas de autoras como Ali Hazelwood. La caja romance es para ti.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <img src="../assets/images/misterio.jpg" class="card-img-top" alt="imagen de una caja literaria abierta con libro de misterio y regalos varios">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja Misterio</h5>
+                        <p class="card-text">¿Te atraen las historias de intriga, suspenso o incluso terror? ¿Disfrutas las historias de Stephen King o Agatha Christie? Entonces la caja misterio es perfecta para ti. Está pensada para amantes del terror, de la novela negra y/o de las típicas historias de detectives.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <img src="../assets/images/fantasía.jpg" class="card-img-top" alt="imagen de una caja literaria abierta con libro de fantasía y regalos varios">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja Fantasía</h5>
+                        <p class="card-text">La caja fantasía es ideal para aquellos lectores que disfrutan conocer nuevos mundos, así como sumergirse en historias rodeadas de magia y de grandes aventuras. Aquí podrás encontrarte autores como Brandon Sanderson y Leigh Bardugo.</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-lg-3">
+                    <img src="../assets/images/sorpresa.jpg" class="card-img-top" alt="imagen de una caja literaria cerrada">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja sorpresa</h5>
+                        <p class="card-text">Si todas nuestras cajas te gustan y no logras decidirte, ¡no te preocuoes!. Nosotros lo hacemos por ti. Nos tomamos el atrevimiento (con tu permiso, claro) de elegir una de las tres novedades del mes y te la enviamos sin decirte cuál seleccionamos. Esta opción es solo para valientes.</p>
+                    </div>
+                </div>
             </div>
         </article>
     </section>

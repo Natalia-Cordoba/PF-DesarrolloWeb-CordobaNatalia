@@ -11,47 +11,33 @@ header {
     justify-content: space-evenly;
 }
 
-.navbar {
+/* barra de navegación */
+.nav-link {
+    color: salmon;
     font-family: "aboreto";
     font-weight: bold;
+    font-size: medium;
+    background-color: rgb(48, 46, 46);
+    padding: 10px;
 }
 
+.navbar-toggler {
+    color: salmon;
+}
 
 /* logo */
 #logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
 }
-
-/* .elemento {
-    display: inline-flex;
-    margin: 10px;
-} */
-
-/* barra de navegación */
-/* .navlink {
-    list-style-type: none;
-    font-family: "aboreto";
-    font-size: small;
-    font-weight: bold;
-    text-align: right;
-} 
-
-.navbar {
-    background-color: rgb(48, 46, 46);
-    text-decoration: none;
-    color: salmon;
-} */
-
 
 /* sección de bienvenida */
 #bienvenida {
     background-color: salmon;
     margin: 15px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* título home */
@@ -64,13 +50,6 @@ h1 {
     padding-bottom: 5px;
 }
 
-/* frase home */
-div .imgFrase {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .frase {
     color:rgb(48, 46, 46);
     text-align: center;
@@ -81,8 +60,9 @@ div .imgFrase {
 
 /* imagen chica leyendo home */
 #chicaLeyendo {
-    height: 180px;
+    height: 190px;
     width: 150px;
+    align-self: center;
 }
 
 /* títulos secciones */
@@ -95,8 +75,7 @@ h2 {
     padding: 10px;
 }
 
-/* Tutorial uso servicio */
-#tutorial {
+.pasos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,14 +83,14 @@ h2 {
 
 /* pasos tutorial */
 .pasos li {
+    list-style: none;
     font-family: "roboto";
     font-size: small;
     text-align:center;
     color: white;
-    width: 280px;
+    width: 270px;
     background-color: rgb(48, 46, 46);
     border-radius: 6px;
-    list-style: none;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -136,60 +115,11 @@ h3 {
     padding: 5px;
 }
 
-/* sección cajas */
-#descripcionCajas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div .imagenCajas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* contenedores cajas */
-.cajas {
-    border-radius: 20px;
-    background-color: rgb(48, 46, 46);
-    width: 85vw;
-    height: auto;
-    margin: 10px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* imagenes cajas */
-.imagenCajas {
-    border: 3px salmon solid;
-    height: 150px;
-    width: 200px;
-}
-
-/* nombres cajas */
-.tituloCaja {
-    text-align: center;
-    font-size: large;
-    padding: 10px;
-}
-
-/* descripciones cajas */
-.textoCajas {
-    color: white;
-    font-family: "roboto";
-    font-size: medium;
-    text-align: center;
-    padding: 15px 20px;
-}
-
 /* footer */
 footer {
     color: white;
     text-align: center;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(48, 46, 46);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -202,6 +132,74 @@ footer {
 
 .copy {
     color: white
+}
+
+/* sección cajas */
+.card {
+    background-color: salmon;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* imagenes cajas */
+.card-img-top {
+    width: 150;
+    height: 100;
+    padding: 20px 10px 5px 10px;
+}
+
+/* nombres cajas */
+.card-title {
+    text-align: center;
+    color: white;
+    font-family: "aboreto";
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 10px;
+}
+
+/* descripciones cajas */
+.card-text {
+    color: rgb(48, 46, 46);
+    font-family: "roboto";
+    font-size: medium;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* sección de descripción de las suscripciones disponibles */
+.descripcionSuscripciones {
+    list-style-type: square;
+}
+
+.precio {
+    font-family: "aboreto";
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+
+
+/* secciión info sobre nosotros */
+.sobreNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoNosotros {
+    font-family: "roboto";
+    font-size: medium;
+    margin: 20px 30px 30px 30px;
+}
+
+.libroNosotros {
+    height: 160px;
+    width: 150px;
 }
 
 
@@ -273,12 +271,11 @@ footer {
     margin-top: 25px;
 }
 
-
 /* implementación de grid en página de inicio */
 .inicio {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 55px 335px 260px 300px 70px;
+    grid-template-rows: 70px auto auto auto 90px;
     grid-template-areas:
         "header"
         "bienvenida"
@@ -312,7 +309,7 @@ footer {
 .nuestrasCajas {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 1700px 70px;
+    grid-template-rows: 70px auto 90px;
     row-gap: 10px;
     grid-template-areas:
         "header"
@@ -333,11 +330,62 @@ footer {
     grid-area: footer;
 }
 
+
+/* implementación de grid en página de suscripciones*/
+.nuestrasSucripciones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto 90px;
+    row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "suscripciones"
+        "footer";
+}
+
+/* asigno las areas */
+header {
+    grid-area: header;
+}
+
+section .sucripciones {
+    grid-area: suscripciones;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* implementación de grid en página de info de equipo Entre páginas */
+.quienesSomos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto 90px;
+    row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "nosotros"
+        "footer";
+}
+
+/* asigno las areas */
+header {
+    grid-area: header;
+}
+
+.sobreNosotros {
+    grid-area: nosotros;
+}
+
+footer {
+    grid-area: footer;
+}
+
 /* implementación de grid en página de contacto */
 .paginaContacto {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 650px 163px 70px;
+    grid-template-rows: 70px auto auto 90px;
     grid-template-areas:
         "header"
         "formulario"
@@ -367,7 +415,7 @@ footer {
 @media (min-width: 600px){
     .inicio {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px auto auto 70px;
+        grid-template-rows: 100px auto auto 70px;
         grid-template-areas:
             "header header"
             "bienvenida bienvenida"
@@ -377,20 +425,13 @@ footer {
     }
 
     /* sección header */
-    /* #logo {
-        width: 55px;
-        height: 55px;
+    .nav-link {
+        font-size: large;
     }
 
-    .menu {
-        font-size: medium;
-        text-align: left;
-    } 
-
-    .elemento {
-        font-size: large;
-        margin: 10px 30px;
-    } */
+    #logo {
+        width: 70px;
+    }
 
     /* sección bienvenida */
     #bienvenida {
@@ -400,13 +441,7 @@ footer {
 
     h1 {
         font-size: x-large;
-        text-align: justify;
         margin-top: 15px;
-    }
-    .imgFrase {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 
     #chicaLeyendo {
@@ -417,7 +452,6 @@ footer {
 
     .frase {
         font-size: x-large;
-        margin-left: 15px;
     }
 
     /* sección tutorial */
@@ -451,19 +485,17 @@ footer {
 @media (min-width: 1024px){
     .inicio {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 45% 38% 7%;
+        grid-template-rows: 150px auto auto 80px;
     }
 
     /* sección header */
-    /* .elemento {
-        font-size: xx-large;
-        margin: 30px 70px;
-    }
+    .nav-link {
+        font-size: x-large;
+    }   
 
     #logo {
-        width: 90px;
-        height: 90px;
-    } */
+        width: 120px;
+    }
 
     /* sección bienvenida */
     #bienvenida {
@@ -514,29 +546,21 @@ footer {
 /* vista tablet página de cajas */
 @media (min-width: 600px) {
     .nuestrasCajas {
-        grid-template-rows: 70px auto 70px;
+        grid-template-rows: 100px auto 70px;
     }
 
-    .cajas{
-        padding: 10px;
-    }
-    
-    .imagenTexto {
-        display: flex;
-        flex-direction: row;
+    .card {
+        width: 45%;
+        height: 750px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
-    .imagenCajas {
-        height: 180px;
-        width: 220px;
-        margin: 15px;
+    .card-title {
+        font-size: xx-large;
     }
 
-    .tituloCaja {
-        font-size: x-large;
-    }
-
-    .textoCajas {
+    .card-text {
         font-size: large;
     }
 }
@@ -544,34 +568,68 @@ footer {
 /* vista desktop página de cajas */
 @media (min-width: 1024px) {
     .nuestrasCajas {
-        grid-template-rows: 110px auto 70px;
+        grid-template-rows: 150px auto 80px;
     }
     
-    .imagenTexto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .card {
+        width: 23%;
+        height: 780px;
+        margin: auto;
+        margin-bottom: 20px;
     }
-        
-    .tituloCaja {
+    
+    .card-title {
         font-size: xx-large;
     }
 
-    .imagenCajas {
-        height: 300px;
-        width: 500px;
-        margin: 10px;
+    .card-text {
+        font-size: large;
+    }
+}
+
+/* vista tablet página de suscripciones */
+@media (min-width: 600px) {
+    .nuestrasSucripciones {
+        grid-template-rows: 100px auto 70px;
+    }
+}
+
+/* vista desktop página de suscripciones */
+@media (min-width: 1024px) {
+    .nuestrasSucripciones {
+        grid-template-rows: 150px auto 80px;
+    }
+}
+
+/* vista tablet página de info equipo Entre páginas */
+@media (min-width: 600px) {
+    .quienesSomos {
+        grid-template-rows: 100px auto 70px;
     }
 
-    .textoCajas {
+    /* secciión info sobre nosotros */
+    .infoNosotros {
+        font-size: large;
+        margin: 50px;
+    }
+}
+
+/* vista desktop página de info equipo Entre páginas */
+@media (min-width: 1024px) {
+    .quienesSomos {
+        grid-template-rows: 150px auto 80px;
+    }
+    
+    .infoNosotros {
         font-size: x-large;
+        margin: 20px 300px;
     }
 }
 
 /* vista tablet página de contacto */
 @media (min-width: 600px) {
     .paginaContacto {
-        grid-template-rows: 70px auto auto 70px;
+        grid-template-rows: 100px auto auto 70px;
     }
 
     #formulario {
@@ -582,7 +640,7 @@ footer {
 /* vista desktop página de contacto */
 @media (min-width: 1024px) {
     .paginaContacto {
-        grid-template-rows: 110px auto 70px;
+        grid-template-rows: 150px auto 80px;
     }
 }
 
