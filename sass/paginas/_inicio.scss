@@ -1,6 +1,6 @@
 // estilo sección de bienvenida
 #bienvenida {
-    background-color: $salmon;
+    background-image: linear-gradient(to bottom, $gris, $salmon);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,9 @@
             align-items: start;
             list-style-type: none;
             background-color: $gris;
+                &:hover {
+                    color: $salmon;
+                }
             border-radius: 6px;
             color: $blanco;
             font-size: medium;
