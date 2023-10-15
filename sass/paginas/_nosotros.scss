@@ -1,0 +1,19 @@
+// estilo pagina de información sobre la empresa
+.sobreNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .infoNosotros {
+        text-align: start;
+        font-size: medium;
+        margin: 20px 30px;
+    }
+
+    .libroNosotros {
+        height: 160px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,261 @@
+// responsive pagina inicio
+// vista tablet inicio
+@media (min-width: 700px){
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto 80px;
+        grid-template-areas:
+            "header header"
+            "bienvenida bienvenida"
+            "tutorial aside"
+            "footer footer";
+        row-gap: 10px;
+        column-gap: 0;
+    }
+    
+    header {
+        .nav-link {
+            font-size: x-large;
+        }
+        #logo {
+            width: 80px;
+        }
+    }   
+
+    #bienvenida {
+        h1 {
+            font-size: xx-large;
+        }
+        article {
+            #chicaLeyendo {
+                height: 450px;
+                width: 300px;
+            }
+        
+            .frase {
+                font-size: x-large;
+            }
+        }   
+    }
+
+
+    #tutorial {
+        h2 {
+            font-size: x-large;
+        }
+
+        .pasos li {
+            font-size: large;
+            margin-right: 0px;
+        }
+    }
+
+    .unboxing {
+        h3 {
+            font-size: x-large;
+        }
+
+        .video {
+            width: 300px;
+        }
+    }
+}
+
+// vista desktop inicio
+@media (min-width: 1200px){
+    .inicio {
+        grid-template-rows: 200px auto auto 80px;
+    }
+
+    header {
+        .nav-link {
+            font-size: xx-large;
+        }
+        #logo {
+            width: 180px;
+        }
+    }   
+
+    #bienvenida {
+        article {
+            @include flex-row-center;
+            #chicaLeyendo {
+                height: 500px;
+                width: 350px;
+                margin-bottom: 20px;
+            }
+        
+            .frase {
+                font-size: xx-large;
+                margin-left: 30px;
+            }
+        }   
+    }
+
+    #tutorial {
+        margin-left: 80px;
+        h2 {
+            font-size: xx-large;
+        }
+
+        .pasos li {
+            font-size: x-large;
+        }
+    }
+
+    .unboxing {
+        margin-right: 80px;
+        h3 {
+            font-size: xx-large;
+        }
+
+        .video {
+            width: 450px;
+        }
+    }
+}
+
+// responsive pagina cajas
+// vista tablet cajas
+@media (min-width: 700px) {
+    .nuestrasCajas {
+        grid-template-rows: 150px auto 80px;
+    }
+
+    .card {
+        width: 45%;
+        height: 750px;
+        margin: auto;
+        margin-bottom: 20px;
+
+        .card-title {
+            font-size: xx-large;
+        }
+
+        .card-text {
+            font-size: large;
+        }
+    }
+}
+
+// vista desktop cajas
+@media (min-width: 1200px) {
+    .nuestrasCajas {
+        grid-template-rows: 200px auto 80px;
+    }
+    
+    .card {
+        width: 23%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+
+        .card-text {
+            font-size: x-large;
+        }
+    }
+}
+
+// responsive pagina suscripciones
+// vista tablet suscripciones
+@media (min-width: 700px) {
+    .nuestrasSucripciones {
+        grid-template-rows: 150px auto 80px;
+    }
+
+    .suscripciones .card {
+        width: 45%;
+        height: 450px;
+        margin: auto;
+        margin-bottom: 20px;
+
+        .card-title {
+            font-size: xx-large;
+        }
+
+        .card-text {
+            font-size: large;
+        }
+    }
+}
+
+// vista desktop cajas
+@media (min-width: 1200px) {
+    .nuestrasSucripciones {
+        grid-template-rows: 200px auto 80px;
+    }
+
+    .suscripciones .card {
+        width: 23%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        .card-text {
+            font-size: x-large;
+        }
+    }
+}
+
+// responsive pagina nosotros
+// vista tablet nosotros
+@media (min-width: 700px) {
+    .quienesSomos {
+        grid-template-rows: 150px auto 80px;
+    }
+
+    .infoNosotros {
+        p {
+            font-size: large;
+            margin: 10px 80px;
+        }
+    }
+}
+
+// vista desktop nosotros
+@media (min-width: 1200px) {
+    .quienesSomos {
+        grid-template-rows: 200px auto 80px;
+    }
+    
+    .infoNosotros {
+        p {
+            font-size: x-large;
+            margin: 20px 160px;
+        }
+    }
+}
+
+// responsive pagina contacto
+// vista tablet contacto
+@media (min-width: 700px) {
+    .paginaContacto {
+        grid-template-rows: 150px auto auto 80px;
+    }
+
+    #metodosContacto {
+    .redes {
+        .logoRedes {
+            width: 50px;
+            margin-inline: 15px;
+        }
+        }
+    }
+}
+
+// vista desktop contacto
+@media (min-width: 1200px) {
+    .paginaContacto {
+        grid-template-rows: 200px auto 80px;
+    }
+
+    #metodosContacto {
+        .redes {
+            .logoRedes {
+                width: 60px;
+                margin-inline: 25px;
+            }
+        }
+    }
+}

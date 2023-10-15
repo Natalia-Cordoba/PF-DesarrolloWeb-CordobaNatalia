@@ -1,0 +1,27 @@
+// estilo de las cajas literarias disponibles
+.card {
+    align-self: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: $salmon;
+    width: 85vw;
+    height: auto;
+    .card-title {
+        color: $blanco;
+        font-family: $fuente-titulos;
+        font-weight: bold;
+        font-size: x-large;
+        padding: 10px;
+    }
+    .card-text {
+        color: $gris;
+        font-size: medium;
+        text-align: start;
+        padding: 5px;
+    }
+    .card-img-top {
+        width: 150;
+        height: 100;
+        padding: 5px;
+    }
+}

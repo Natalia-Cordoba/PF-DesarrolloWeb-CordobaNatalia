@@ -1,646 +1,521 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* estilo del header */
+body {
+  background-color: #f5f5f5;
+  font-family: "roboto";
+  text-align: center;
+}
+body h1, body h2, body h3 {
+  padding: 15px;
+}
+body h1, body h2 {
+  font-family: "aboreto";
+  font-weight: bold;
+}
+body h1 {
+  color: #f5f5f5;
+}
+body h2, body h3 {
+  color: #fa8072;
+}
+
 header {
-    background-color: rgb(48, 46, 46);
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #302e2e;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+header #logo {
+  width: 50px;
+}
+header .nav-link {
+  background-color: #302e2e;
+  font-size: large;
+  font-family: "aboreto";
+  font-weight: bold;
+  color: #fa8072;
+  padding: 10px;
+}
+header .nav-link:hover {
+  color: #f5f5f5;
 }
 
-/* barra de navegación */
-.nav-link {
-    color: salmon;
-    font-family: "aboreto";
-    font-weight: bold;
-    font-size: medium;
-    background-color: rgb(48, 46, 46);
-    padding: 10px;
-}
-
-.navbar-toggler {
-    color: salmon;
-}
-
-/* logo */
-#logo {
-    width: 50px;
-}
-
-/* sección de bienvenida */
-#bienvenida {
-    background-color: salmon;
-    margin: 15px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* título home */
-h1 {
-    color: rgb(255, 255, 255);
-    font-family: "aboreto";
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.frase {
-    color:rgb(48, 46, 46);
-    text-align: center;
-    font-weight: bold;
-    font-size: small;
-    padding-top: 5px;
-}
-
-/* imagen chica leyendo home */
-#chicaLeyendo {
-    height: 190px;
-    width: 150px;
-    align-self: center;
-}
-
-/* títulos secciones */
-h2 {
-    font-family: "aboreto";
-    font-weight: bold;
-    font-size: large;
-    color: salmon;
-    text-align: center;
-    padding: 10px;
-}
-
-.pasos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* pasos tutorial */
-.pasos li {
-    list-style: none;
-    font-family: "roboto";
-    font-size: small;
-    text-align:center;
-    color: white;
-    width: 270px;
-    background-color: rgb(48, 46, 46);
-    border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-/* unboxing caja literaria ejemplo */
-.unboxing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* video de caja literaria */
-.video {
-    width: 250px;
-}
-
-/* subtítulos */
-h3 {
-    font-family: "roboto";
-    font-size: large;
-    color: salmon;
-    padding: 5px;
-}
-
-/* footer */
 footer {
-    color: white;
-    text-align: center;
-    background-color: rgb(48, 46, 46);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #302e2e;
 }
-
-.top {
-   text-decoration: none;
-   color: white;
+footer a, footer p {
+  color: #f5f5f5;
 }
-
-.copy {
-    color: white
+footer a {
+  text-decoration: none;
 }
-
-/* sección cajas */
-.card {
-    background-color: salmon;
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-/* imagenes cajas */
-.card-img-top {
-    width: 150;
-    height: 100;
-    padding: 20px 10px 5px 10px;
-}
-
-/* nombres cajas */
-.card-title {
-    text-align: center;
-    color: white;
-    font-family: "aboreto";
-    font-weight: bold;
-    font-size: large;
-    padding: 5px 10px;
-}
-
-/* descripciones cajas */
-.card-text {
-    color: rgb(48, 46, 46);
-    font-family: "roboto";
-    font-size: medium;
-    text-align: center;
-    padding: 5px 10px;
-}
-
-/* sección de descripción de las suscripciones disponibles */
-.descripcionSuscripciones {
-    list-style-type: square;
-}
-
-.precio {
-    font-family: "aboreto";
-    color: white;
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-
-
-
-/* secciión info sobre nosotros */
-.sobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.infoNosotros {
-    font-family: "roboto";
-    font-size: medium;
-    margin: 20px 30px 30px 30px;
-}
-
-.libroNosotros {
-    height: 160px;
-    width: 150px;
-}
-
-
-/* sección de contacto */
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-}
-
-/* sección formulario */
-#formulario {
-    font-family: "roboto";
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-}
-
-#nombre {
-    height: 35px;
-    width: 70vw;
-}
-
-#correo {
-    height: 35px;
-    width: 70vw;
-}
-
-#comentario {
-    height: 300px;
-    width: 70vw;
-}
-
-.newsletter {
-    color:rgb(48, 46, 46);
-    width: 70vw;
-}
-
-#enviar {
-    font-size: medium;
-    color:rgb(48, 46, 46);
-    border: 0.1 rgb(48, 46, 46) solid;
-    border-radius: 10px;
-    background-color: salmon;
-    height: 40px;
-    width: 80px;
-}
-
-.elementoForm {
-    margin: 10px;
-}
-
-/* links a redes */
-.redes {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    margin: 15px;
-}
-
-.logoRedes {
-    width: 50px;
-}
-
-#metodosContacto {
-    margin-top: 25px;
-}
-
-/* implementación de grid en página de inicio */
-.inicio {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px auto auto auto 90px;
-    grid-template-areas:
-        "header"
-        "bienvenida"
-        "tutorial"
-        "aside"
-        "footer";
-    row-gap: 5px;
-}
-/* asigno las areas */
-header {
-    grid-area: header;
+footer a:hover {
+  color: #fa8072;
 }
 
 #bienvenida {
-    grid-area: bienvenida;
+  background-color: #fa8072;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 20px;
+  padding: 10px;
+}
+#bienvenida article #chicaLeyendo {
+  height: 190px;
+  width: 150px;
+}
+#bienvenida article .frase {
+  font-size: medium;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
 #tutorial {
-    grid-area: tutorial;
+  margin: 10px 20px;
+}
+#tutorial .pasos {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+#tutorial .pasos li {
+  align-items: start;
+  list-style-type: none;
+  background-color: #302e2e;
+  border-radius: 6px;
+  color: #f5f5f5;
+  font-size: medium;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: auto;
 }
 
 .unboxing {
-    grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer {
-    grid-area: footer;
+.video {
+  width: 250px;
+  margin: 0px 20px 20px 20px;
 }
 
-/* implementación de grid en página de cajas */
-.nuestrasCajas {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px auto 90px;
-    row-gap: 10px;
-    grid-template-areas:
-        "header"
-        "cajas"
-        "footer";
+.card {
+  align-self: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fa8072;
+  width: 85vw;
+  height: auto;
+}
+.card .card-title {
+  color: #f5f5f5;
+  font-family: "aboreto";
+  font-weight: bold;
+  font-size: x-large;
+  padding: 10px;
+}
+.card .card-text {
+  color: #302e2e;
+  font-size: medium;
+  text-align: start;
+  padding: 5px;
+}
+.card .card-img-top {
+  width: 150;
+  height: 100;
+  padding: 5px;
 }
 
-/* asigno las areas */
-header {
-    grid-area: header;
+.card {
+  height: auto;
+  padding: 10px;
 }
 
-section #descripciónCajas {
-    grid-area: cajas;
+.descripcionSuscripciones .card-text {
+  text-align: center;
+  font-size: medium;
+}
+.descripcionSuscripciones .precio {
+  font-family: "aboreto";
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
-footer {
-    grid-area: footer;
-}
-
-
-/* implementación de grid en página de suscripciones*/
-.nuestrasSucripciones {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px auto 90px;
-    row-gap: 10px;
-    grid-template-areas:
-        "header"
-        "suscripciones"
-        "footer";
-}
-
-/* asigno las areas */
-header {
-    grid-area: header;
-}
-
-section .sucripciones {
-    grid-area: suscripciones;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* implementación de grid en página de info de equipo Entre páginas */
-.quienesSomos {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px auto 90px;
-    row-gap: 10px;
-    grid-template-areas:
-        "header"
-        "nosotros"
-        "footer";
-}
-
-/* asigno las areas */
-header {
-    grid-area: header;
+.btn {
+  font-family: "aboreto";
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0;
 }
 
 .sobreNosotros {
-    grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-footer {
-    grid-area: footer;
+.sobreNosotros .infoNosotros {
+  text-align: start;
+  font-size: medium;
+  margin: 20px 30px;
 }
-
-/* implementación de grid en página de contacto */
-.paginaContacto {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px auto auto 90px;
-    grid-template-areas:
-        "header"
-        "formulario"
-        "metodosContacto"
-        "footer";
-    row-gap: 10px;
-}
-
-/* asigno las areas */
-header {
-    grid-area: header;
+.sobreNosotros .libroNosotros {
+  height: 160px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 #formulario {
-    grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90vw;
+  padding: 15px;
+  font-size: medium;
+  margin-left: 10px;
+}
+#formulario .elementoForm {
+  margin-bottom: 10px;
+  width: 75vw;
+}
+#formulario #nombre, #formulario #correo {
+  height: 30px;
+}
+#formulario #comentario {
+  height: 300px;
+}
+#formulario .newsletter {
+  display: inline;
+}
+#formulario button {
+  font-family: "aboreto";
+  color: #f5f5f5;
+  border-radius: 10px;
+  background-color: #fa8072;
+  height: 40px;
+  margin-top: 10px;
+}
+#formulario button:hover {
+  background-color: #302e2e;
 }
 
-#metodosContacto {
-    grid-area: metodosContacto;
+#metodosContacto .redes {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+#metodosContacto .redes .logoRedes {
+  width: 40px;
+  margin-inline: 5px;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto auto auto 90px;
+  grid-template-areas: "header" "bienvenida" "tutorial" "aside" "footer";
+  row-gap: 10px;
+}
+
+header {
+  grid-area: header;
+}
+
+#bienvenida {
+  grid-area: bienvenida;
+}
+
+#tutorial {
+  grid-area: tutorial;
+}
+
+.unboxing {
+  grid-area: aside;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
-/* vista tablet pagina de inicio */
-@media (min-width: 600px){
-    .inicio {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px auto auto 70px;
-        grid-template-areas:
-            "header header"
-            "bienvenida bienvenida"
-            "tutorial aside"
-            "footer footer";
-        gap: 10px;
-    }
-
-    /* sección header */
-    .nav-link {
-        font-size: large;
-    }
-
-    #logo {
-        width: 70px;
-    }
-
-    /* sección bienvenida */
-    #bienvenida {
-        height: 400px;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: x-large;
-        margin-top: 15px;
-    }
-
-    #chicaLeyendo {
-        height: 300px;
-        width: 200px;
-        margin-top: 10px;
-    }
-
-    .frase {
-        font-size: x-large;
-    }
-
-    /* sección tutorial */
-    h2 {
-        font-size: x-large;
-        padding: 10px;
-    }
-
-    .pasos li {
-        font-size: large;
-        width: 320px;
-        margin-bottom: 20px;
-    }
-
-    /* sección unboxing */
-    h3 {
-        font-size: x-large;
-    }
-
-    .video {
-        width: 280px;
-    }
-
-    #tutorial, .unboxing {
-     margin: 0px 20px;
-    }
+.nuestrasCajas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto 90px;
+  row-gap: 10px;
+  grid-template-areas: "header" "cajas" "footer";
 }
 
-
-/* vista desktop pagina de incio*/
-@media (min-width: 1024px){
-    .inicio {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px auto auto 80px;
-    }
-
-    /* sección header */
-    .nav-link {
-        font-size: x-large;
-    }   
-
-    #logo {
-        width: 120px;
-    }
-
-    /* sección bienvenida */
-    #bienvenida {
-        height: 500px;
-    }
-
-    h1 {
-        font-size: xx-large;
-    }
-
-    #chicaLeyendo {
-        height: 350px;
-        width: 280px;
-        padding-bottom: 10px;
-    }
-
-    .frase {
-        font-size: xx-large;
-        padding-left: 30px;
-    }
-
-    /* sección tutorial */
-    h2 {
-        font-size: xx-large;
-    }
-
-    .pasos li {
-        font-size: x-large;
-        width: 40vw;
-        margin-left: 30px;
-    }
-
-    /* sección unboxing */
-    h3 {
-        font-size: xx-large;
-    }
-
-    .video {
-        width: 300px;
-        margin-right: 30px;
-    }
-
-    #tutorial, .unboxing {
-        margin-top: 20px;
-    }
+header {
+  grid-area: header;
 }
 
-/* vista tablet página de cajas */
-@media (min-width: 600px) {
-    .nuestrasCajas {
-        grid-template-rows: 100px auto 70px;
-    }
-
-    .card {
-        width: 45%;
-        height: 750px;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .card-title {
-        font-size: xx-large;
-    }
-
-    .card-text {
-        font-size: large;
-    }
+section #descripciónCajas {
+  grid-area: cajas;
 }
 
-/* vista desktop página de cajas */
-@media (min-width: 1024px) {
-    .nuestrasCajas {
-        grid-template-rows: 150px auto 80px;
-    }
-    
-    .card {
-        width: 23%;
-        height: 780px;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    
-    .card-title {
-        font-size: xx-large;
-    }
-
-    .card-text {
-        font-size: large;
-    }
+footer {
+  grid-area: footer;
 }
 
-/* vista tablet página de suscripciones */
-@media (min-width: 600px) {
-    .nuestrasSucripciones {
-        grid-template-rows: 100px auto 70px;
-    }
+.nuestrasSucripciones {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto 90px;
+  row-gap: 10px;
+  grid-template-areas: "header" "suscripciones" "footer";
 }
 
-/* vista desktop página de suscripciones */
-@media (min-width: 1024px) {
-    .nuestrasSucripciones {
-        grid-template-rows: 150px auto 80px;
-    }
+header {
+  grid-area: header;
 }
 
-/* vista tablet página de info equipo Entre páginas */
-@media (min-width: 600px) {
-    .quienesSomos {
-        grid-template-rows: 100px auto 70px;
-    }
-
-    /* secciión info sobre nosotros */
-    .infoNosotros {
-        font-size: large;
-        margin: 50px;
-    }
+section .sucripciones {
+  grid-area: suscripciones;
 }
 
-/* vista desktop página de info equipo Entre páginas */
-@media (min-width: 1024px) {
-    .quienesSomos {
-        grid-template-rows: 150px auto 80px;
-    }
-    
-    .infoNosotros {
-        font-size: x-large;
-        margin: 20px 300px;
-    }
+footer {
+  grid-area: footer;
 }
 
-/* vista tablet página de contacto */
-@media (min-width: 600px) {
-    .paginaContacto {
-        grid-template-rows: 100px auto auto 70px;
-    }
-
-    #formulario {
-        width: 70vw;
-    }
+.quienesSomos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto 90px;
+  row-gap: 10px;
+  grid-template-areas: "header" "nosotros" "footer";
 }
 
-/* vista desktop página de contacto */
-@media (min-width: 1024px) {
-    .paginaContacto {
-        grid-template-rows: 150px auto 80px;
-    }
+header {
+  grid-area: header;
 }
 
+.sobreNosotros {
+  grid-area: nosotros;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.paginaContacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto auto 90px;
+  grid-template-areas: "header" "formulario" "metodosContacto" "footer";
+  row-gap: 10px;
+}
+
+header {
+  grid-area: header;
+}
+
+#formulario {
+  grid-area: formulario;
+}
+
+#metodosContacto {
+  grid-area: metodosContacto;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 700px) {
+  .inicio {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px auto auto 80px;
+    grid-template-areas: "header header" "bienvenida bienvenida" "tutorial aside" "footer footer";
+    row-gap: 10px;
+    column-gap: 0;
+  }
+  header .nav-link {
+    font-size: x-large;
+  }
+  header #logo {
+    width: 80px;
+  }
+  #bienvenida h1 {
+    font-size: xx-large;
+  }
+  #bienvenida article #chicaLeyendo {
+    height: 450px;
+    width: 300px;
+  }
+  #bienvenida article .frase {
+    font-size: x-large;
+  }
+  #tutorial h2 {
+    font-size: x-large;
+  }
+  #tutorial .pasos li {
+    font-size: large;
+    margin-right: 0px;
+  }
+  .unboxing h3 {
+    font-size: x-large;
+  }
+  .unboxing .video {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .inicio {
+    grid-template-rows: 200px auto auto 80px;
+  }
+  header .nav-link {
+    font-size: xx-large;
+  }
+  header #logo {
+    width: 180px;
+  }
+  #bienvenida article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #bienvenida article #chicaLeyendo {
+    height: 500px;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  #bienvenida article .frase {
+    font-size: xx-large;
+    margin-left: 30px;
+  }
+  #tutorial {
+    margin-left: 80px;
+  }
+  #tutorial h2 {
+    font-size: xx-large;
+  }
+  #tutorial .pasos li {
+    font-size: x-large;
+  }
+  .unboxing {
+    margin-right: 80px;
+  }
+  .unboxing h3 {
+    font-size: xx-large;
+  }
+  .unboxing .video {
+    width: 450px;
+  }
+}
+@media (min-width: 700px) {
+  .nuestrasCajas {
+    grid-template-rows: 150px auto 80px;
+  }
+  .card {
+    width: 45%;
+    height: 750px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .card .card-title {
+    font-size: xx-large;
+  }
+  .card .card-text {
+    font-size: large;
+  }
+}
+@media (min-width: 1200px) {
+  .nuestrasCajas {
+    grid-template-rows: 200px auto 80px;
+  }
+  .card {
+    width: 23%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .card .card-text {
+    font-size: x-large;
+  }
+}
+@media (min-width: 700px) {
+  .nuestrasSucripciones {
+    grid-template-rows: 150px auto 80px;
+  }
+  .suscripciones .card {
+    width: 45%;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .suscripciones .card .card-title {
+    font-size: xx-large;
+  }
+  .suscripciones .card .card-text {
+    font-size: large;
+  }
+}
+@media (min-width: 1200px) {
+  .nuestrasSucripciones {
+    grid-template-rows: 200px auto 80px;
+  }
+  .suscripciones .card {
+    width: 23%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .suscripciones .card .card-text {
+    font-size: x-large;
+  }
+}
+@media (min-width: 700px) {
+  .quienesSomos {
+    grid-template-rows: 150px auto 80px;
+  }
+  .infoNosotros p {
+    font-size: large;
+    margin: 10px 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .quienesSomos {
+    grid-template-rows: 200px auto 80px;
+  }
+  .infoNosotros p {
+    font-size: x-large;
+    margin: 20px 160px;
+  }
+}
+@media (min-width: 700px) {
+  .paginaContacto {
+    grid-template-rows: 150px auto auto 80px;
+  }
+  #metodosContacto .redes .logoRedes {
+    width: 50px;
+    margin-inline: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .paginaContacto {
+    grid-template-rows: 200px auto 80px;
+  }
+  #metodosContacto .redes .logoRedes {
+    width: 60px;
+    margin-inline: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

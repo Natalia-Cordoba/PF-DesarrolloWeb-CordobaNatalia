@@ -1,0 +1,27 @@
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// estilo body y títulos
+body {
+    background-color: $blanco;
+    font-family: "roboto";
+    text-align: center;
+    h1 , h2 , h3 {
+        padding: 15px;
+    }
+    h1 , h2 {
+        font-family: $fuente-titulos;
+        font-weight: bold;
+    }
+    h1 {
+        color: $blanco;
+    }
+    h2 , h3 {
+        color: $salmon;
+    }
+}
+

@@ -1,0 +1,17 @@
+// estilo del footer
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: $gris;
+    a , p {
+        color: $blanco;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $salmon;
+        }
+    }
+}

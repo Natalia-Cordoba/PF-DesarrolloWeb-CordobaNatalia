@@ -1,0 +1,26 @@
+// estilo del header con logo y barra de navegación
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: $gris;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    #logo {
+        width: 50px;
+    }
+
+    .nav-link {
+        background-color: $gris;
+        font-size: large;
+        font-family: $fuente-titulos;
+        font-weight: bold;
+        color: $salmon;
+            &:hover{
+                color: $blanco;
+            }
+        padding: 10px;
+    }
+}
+

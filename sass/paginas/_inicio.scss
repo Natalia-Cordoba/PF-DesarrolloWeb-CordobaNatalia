@@ -1,0 +1,55 @@
+// estilo sección de bienvenida
+#bienvenida {
+    background-color: $salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+    padding: 10px;
+
+    article {
+        #chicaLeyendo {
+            height: 190px;
+            width: 150px;
+        }
+
+        .frase {
+            font-size: medium;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+    }
+}
+
+// estilo sección tutorial de uso del servicio
+#tutorial {
+    margin: 10px 20px;
+    .pasos {
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        li {
+            align-items: start;
+            list-style-type: none;
+            background-color: $gris;
+            border-radius: 6px;
+            color: $blanco;
+            font-size: medium;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: auto;
+        }
+    }
+}
+
+// estilo sección de unboxing de caja literaria
+.unboxing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    width: 250px;
+    margin: 0px 20px 20px 20px;
+}

@@ -1,0 +1,54 @@
+// estilo del formulario de contacto
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90vw;
+    padding: 15px;
+    font-size: medium;
+    margin-left: 10px;
+
+    .elementoForm {
+        margin-bottom: 10px;
+        width: 75vw;
+    }
+
+    #nombre , #correo {
+        height: 30px;
+    }
+
+    #comentario {
+        height: 300px;
+    }
+
+    .newsletter {
+        display: inline;
+    }
+
+    button {
+        font-family: $fuente-titulos;
+        color: $blanco;
+        border-radius: 10px;
+        background-color: $salmon;
+        height: 40px;
+        &:hover {
+            background-color: $gris;
+        }
+        margin-top: 10px;
+    }
+}
+
+// estilo de los distintos metodos de contacto
+#metodosContacto {
+    .redes {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+
+        .logoRedes {
+            width: 40px;
+            margin-inline: 5px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+// grid inicio
+.inicio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto auto auto 90px;
+    grid-template-areas:
+        "header"
+        "bienvenida"
+        "tutorial"
+        "aside"
+        "footer";
+    row-gap: 10px;
+}
+
+// asigno areas inicio
+header {
+    grid-area: header;
+}
+
+#bienvenida {
+    grid-area: bienvenida;
+}
+
+#tutorial {
+    grid-area: tutorial;
+}
+
+.unboxing {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// grid cajas
+.nuestrasCajas {
+    @include grid-mobile;
+    grid-template-areas:
+        "header"
+        "cajas"
+        "footer";
+}
+
+// asigno areas cajas
+header {
+    grid-area: header;
+}
+
+section #descripciónCajas {
+    grid-area: cajas;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// grid suscripciones
+.nuestrasSucripciones {
+    @include grid-mobile;
+    grid-template-areas:
+        "header"
+        "suscripciones"
+        "footer";
+}
+
+// asigno areas suscripciones
+header {
+    grid-area: header;
+}
+
+section .sucripciones {
+    grid-area: suscripciones;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// grid info de la empresa
+.quienesSomos {
+    @include grid-mobile;
+    grid-template-areas:
+        "header"
+        "nosotros"
+        "footer";
+}
+
+// asigno areas
+header {
+    grid-area: header;
+}
+
+.sobreNosotros {
+    grid-area: nosotros;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// vista mobile contacto
+// grid
+.paginaContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto auto 90px;
+    grid-template-areas:
+        "header"
+        "formulario"
+        "metodosContacto"
+        "footer";
+    row-gap: 10px;
+}
+
+// asigno areas
+header {
+    grid-area: header;
+}
+
+#formulario {
+    grid-area: formulario;
+}
+
+#metodosContacto {
+    grid-area: metodosContacto;
+}
+
+footer {
+    grid-area: footer;
+}
