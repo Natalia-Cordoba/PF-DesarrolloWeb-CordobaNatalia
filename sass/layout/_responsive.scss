@@ -23,6 +23,8 @@
     }   
 
     #bienvenida {
+        margin-left: 30px;
+        margin-right: 30px;
         h1 {
             font-size: xx-large;
         }
@@ -72,7 +74,7 @@
             font-size: xx-large;
         }
         #logo {
-            width: 180px;
+            width: 140px;
         }
     }   
 
@@ -87,7 +89,7 @@
         
             .frase {
                 font-size: xx-large;
-                margin-left: 30px;
+                margin: 20px;
             }
         }   
     }
@@ -129,11 +131,12 @@
         margin-bottom: 20px;
 
         .card-title {
-            font-size: xx-large;
+            font-size: x-large;
         }
 
         .card-text {
             font-size: large;
+            text-wrap: wrap;
         }
     }
 }
@@ -146,12 +149,17 @@
     
     .card {
         width: 23%;
-        height: auto;
+        height: 750px;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 30px;
+        
+        .card-title {
+            font-size: xx-large;
+        }
 
         .card-text {
-            font-size: x-large;
+            font-size: large;
         }
     }
 }
@@ -165,16 +173,17 @@
 
     .suscripciones .card {
         width: 45%;
-        height: 450px;
+        height: 470px;
         margin: auto;
         margin-bottom: 20px;
 
         .card-title {
-            font-size: xx-large;
+            font-size: x-large;
         }
 
         .card-text {
             font-size: large;
+            text-wrap: wrap;
         }
     }
 }
@@ -186,14 +195,14 @@
     }
 
     .suscripciones .card {
+        height: 600px;
         width: 23%;
-        height: auto;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 50px;
 
         .card-text {
-            font-size: x-large;
+            font-size: large;
         }
     }
 }
@@ -234,11 +243,19 @@
         grid-template-rows: 150px auto auto 80px;
     }
 
+    #formulario {
+        .elementoForm {
+            width: 500px;
+        }
+    }
+
     #metodosContacto {
     .redes {
+        display: flex;
+        justify-content: center;
         .logoRedes {
             width: 50px;
-            margin-inline: 15px;
+            margin-inline: 10px;
         }
         }
     }
@@ -250,11 +267,17 @@
         grid-template-rows: 200px auto 80px;
     }
 
+    #formulario {
+        .elementoForm {
+            width: 1000px;
+        }
+    }
+
     #metodosContacto {
         .redes {
             .logoRedes {
                 width: 60px;
-                margin-inline: 25px;
+                margin-inline: 15px;
             }
         }
     }

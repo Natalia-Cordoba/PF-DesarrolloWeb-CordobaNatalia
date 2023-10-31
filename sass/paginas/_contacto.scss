@@ -1,16 +1,17 @@
 // estilo del formulario de contacto
+.contacto {
+    justify-self: center;
+}
+
 #formulario {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 90vw;
     padding: 15px;
     font-size: medium;
-    margin-left: 10px;
 
     .elementoForm {
         margin-bottom: 10px;
-        width: 75vw;
+        width: 250px;
     }
 
     #nombre , #correo {
@@ -40,15 +41,14 @@
 
 // estilo de los distintos metodos de contacto
 #metodosContacto {
+    margin-top: 20px;
     .redes {
         list-style-type: none;
+        padding-left: 0%;
         display: flex;
-        justify-content: center;
-        justify-items: center;
-
+        justify-content: space-evenly;
         .logoRedes {
             width: 40px;
-            margin-inline: 5px;
         }
     }
 }

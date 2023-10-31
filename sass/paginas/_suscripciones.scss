@@ -1,25 +1,31 @@
 // estilo de las cards de suscripciones
-.card {
-    height: auto;
-    padding: 10px;
-}
+.suscripciones {
+    display: flex;
+    flex-direction: column;
 
-.descripcionSuscripciones {
-    .card-text {
-        text-align: center;
-        font-size: medium;
+    .card {
+        height: auto;
+        padding: 10px;
     }
-    .precio {
-            font-family: "aboreto";
-            color: white;
-            font-size: xx-large;    
-            font-weight: bold;
-    }
-}
 
-.btn {
-    font-family: $fuente-titulos;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 0;
+    .descripcionSuscripciones {
+        .card-text {
+            text-align: center;
+            text-wrap: wrap;
+            font-size: medium;
+        }
+        .precio {
+                font-family: "aboreto";
+                color: white;
+                font-size: xx-large;    
+                font-weight: bold;
+        }
+    }
+
+    .btn {
+        font-family: $fuente-titulos;
+        font-weight: bold;
+        border-radius: 10px;
+        margin: 0;
+    }
 }

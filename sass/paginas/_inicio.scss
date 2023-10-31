@@ -1,10 +1,10 @@
 // estilo sección de bienvenida
 #bienvenida {
-    background-image: linear-gradient(to bottom, $gris, $salmon);
+    background: linear-gradient(to bottom, $gris, $salmon);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 20px;
+    margin: 20px;
     padding: 10px;
 
     article {
@@ -15,8 +15,8 @@
 
         .frase {
             font-size: medium;
-            font-weight: bold;
-            padding-top: 20px;
+            font-style: italic;
+            margin-top: 10px;
         }
     }
 }

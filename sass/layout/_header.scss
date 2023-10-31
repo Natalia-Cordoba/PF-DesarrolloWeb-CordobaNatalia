@@ -11,6 +11,13 @@ header {
         width: 50px;
     }
 
+    .navbar-toggler {
+        border: 1.5px solid $salmon;
+        .navbar-toggler-icon {
+            background-color: $salmon;
+        }
+    }
+  
     .nav-link {
         background-color: $gris;
         font-size: large;
