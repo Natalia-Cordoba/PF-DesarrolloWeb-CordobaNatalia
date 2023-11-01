@@ -9,6 +9,11 @@ header {
 
     #logo {
         width: 50px;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
     }
 
     .navbar-toggler {
@@ -23,6 +28,7 @@ header {
         font-size: large;
         font-family: $fuente-titulos;
         font-weight: bold;
+        margin-inline: 20px;
         color: $salmon;
             &:hover{
                 color: $blanco;

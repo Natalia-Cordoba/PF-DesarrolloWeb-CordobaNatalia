@@ -1,16 +1,23 @@
 // estilo sección de bienvenida
 #bienvenida {
     background: linear-gradient(to bottom, $gris, $salmon);
+    box-shadow: 5px 10px 10px $gris;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
+
+    .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+    
+    }
 
     article {
         #chicaLeyendo {
-            height: 190px;
-            width: 150px;
+            width: 160px;
+            box-shadow: 4px 6px 6px $gris;
+            border-radius: 10px;
         }
 
         .frase {
@@ -55,4 +62,5 @@
 .video {
     width: 250px;
     margin: 0px 20px 20px 20px;
+    border: 1px solid $gris;
 }

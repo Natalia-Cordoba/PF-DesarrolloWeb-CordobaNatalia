@@ -6,6 +6,11 @@
     background-color: $salmon;
     width: 85vw;
     height: auto;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
     
     .card-title {
         color: $blanco;
@@ -24,5 +29,6 @@
         width: 150;
         height: 100;
         padding: 5px;
+        box-shadow: 4px 4px 8px $gris;
     }
 }

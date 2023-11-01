@@ -35,6 +35,11 @@ header {
 }
 header #logo {
   width: 50px;
+  transition: 1s;
+}
+header #logo:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 header .navbar-toggler {
   border: 1.5px solid #fa8072;
@@ -47,6 +52,7 @@ header .nav-link {
   font-size: large;
   font-family: "aboreto";
   font-weight: bold;
+  margin-inline: 20px;
   color: #fa8072;
   padding: 10px;
 }
@@ -73,15 +79,20 @@ footer a:hover {
 
 #bienvenida {
   background: linear-gradient(to bottom, #302e2e, #fa8072);
+  box-shadow: 5px 10px 10px #302e2e;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
+}
+#bienvenida .animate__animated.animate__bounce {
+  --animate-duration: 2s;
 }
 #bienvenida article #chicaLeyendo {
-  height: 190px;
-  width: 150px;
+  width: 160px;
+  box-shadow: 4px 6px 6px #302e2e;
+  border-radius: 10px;
 }
 #bienvenida article .frase {
   font-size: medium;
@@ -121,6 +132,7 @@ footer a:hover {
 .video {
   width: 250px;
   margin: 0px 20px 20px 20px;
+  border: 1px solid #302e2e;
 }
 
 .card {
@@ -130,6 +142,11 @@ footer a:hover {
   background-color: #fa8072;
   width: 85vw;
   height: auto;
+  transition: 1s;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 .card .card-title {
   color: #f5f5f5;
@@ -148,6 +165,7 @@ footer a:hover {
   width: 150;
   height: 100;
   padding: 5px;
+  box-shadow: 4px 4px 8px #302e2e;
 }
 
 .suscripciones {
@@ -250,6 +268,11 @@ footer a:hover {
 }
 #metodosContacto .redes .logoRedes {
   width: 40px;
+  transition: 1s;
+}
+#metodosContacto .redes .logoRedes:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .inicio {
@@ -386,7 +409,6 @@ footer {
     font-size: xx-large;
   }
   #bienvenida article #chicaLeyendo {
-    height: 450px;
     width: 300px;
   }
   #bienvenida article .frase {
@@ -423,8 +445,7 @@ footer {
     align-items: center;
   }
   #bienvenida article #chicaLeyendo {
-    height: 500px;
-    width: 350px;
+    width: 400px;
     margin-bottom: 20px;
   }
   #bienvenida article .frase {
@@ -474,8 +495,7 @@ footer {
   }
   .card {
     width: 23%;
-    height: 750px;
-    margin: auto;
+    height: 700px;
     margin-top: 20px;
     margin-bottom: 30px;
   }
@@ -509,11 +529,14 @@ footer {
     grid-template-rows: 200px auto 80px;
   }
   .suscripciones .card {
-    height: 600px;
+    height: 550px;
     width: 23%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
+  }
+  .suscripciones .card .card-title {
+    margin-top: 40px;
   }
   .suscripciones .card .card-text {
     font-size: large;
